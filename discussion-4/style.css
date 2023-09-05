@@ -1,0 +1,57 @@
+div, p, span, i, section, form, header, footer, h1, h2, p, a {
+    border: 1px solid black;
+}
+
+ul li {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+.position-static {
+    position: static;
+    top: 0;
+}
+
+.position-relative {
+    display: inline;
+    position: relative;
+    bottom: 10px;
+}
+
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    position: relative;
+    bottom: 160px;
+    left: 40px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+}
+
+.absolute-position {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+
+.clip-img {
+    position: absolute;
+    clip:rect(10px, 100px, 100px, 0px);
+}

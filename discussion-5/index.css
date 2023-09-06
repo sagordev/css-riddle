@@ -1,0 +1,101 @@
+
+.inline-class{
+    display: inline;
+    background-color: green;
+    height:200px;
+    width: 500px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container{
+    background-color: purple;
+}
+
+.inline-block {
+    background-color: red;
+    display: inline-block;
+    height: 200px;
+    width: 500px;
+}
+
+.inline-div {
+    display: inline;
+    background-color: yellow;
+    padding: 16px;
+    margin: 16px;
+
+}
+
+.inline-block-div{
+    display: inline-block;
+    background-color: cyan;
+    padding: 16px;
+    margin: 16px;
+}
+
+.block-div{
+    display: block;
+    background-color:blue;
+    padding: 16px;
+    margin: 16px;
+    height: 200px;
+    width: 200px;
+}
+
+.vertically-centered-container{
+    border: 1px solid green;
+    background-color: peru;
+    height: 500px;
+}
+
+.vertically-centered-container div{
+    background-color: gray;
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+}
+
+.line-height-for-v-center{
+    line-height: 1.5;
+    background-color: gray;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.center {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+  }
+  
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .descendant-selector p{
+    background-color: red;
+  }
+
+  .child-selector > p{
+    background-color: green;
+  }
+
+  .adjacent-sibling-selector + p {
+    background-color: pink;
+
+  }
+
+  .general-sibling-selector ~ p {
+    background-color: aqua;
+
+  }

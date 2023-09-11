@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previwer</title>
+    <link rel="stylesheet" href="../previewer/previwer-style.css">
+</head>
+<body>
+    <div class="topic" topic-name="CSS Pseudo-classes" id="topic1">
+        <style>
+            a:link {
+                color: red;
+            }
+            a:hover{
+                color: blue
+            }
+            p i {
+                background-color: yellowgreen;
+            }
+        </style>
+        <a href="#">This is link</a>
+        <div>
+            <p>This is first P
+                <i>This is italic</i>
+                <div>
+                    <i>This is div 1</i>
+                </div>
+                <div>
+                    <i>This is div 2</i>
+                </div>
+            </p>
+            <p>This is second P
+                <i>This is italic 1</i>
+                <span>
+                    <i>This is italic 2</i>
+                </span>
+            </p>
+            <p>This is third P
+                <i>This is italic</i>
+            </p>
+        </div>
+    </div>
+    <div class="topic" topic-name="The :lang Pseudo-class">
+        <style>
+            p:lang(en){
+                quotes: "'" "'";
+            }
+            p:lang(bn){
+                quotes: '—' '—';
+            }
+        </style>
+        <p lang="bn"><q>Amar sonar bangla</q> - Rabindranath Tagore</p>
+    </div>
+    <div class="topic" topic-name="Various Pseudo-classes">
+        <style>
+            .pseudo {
+                width: 100px;
+                height: 100px;
+            }
+            .pseudo:empty {
+                background-color: yellowgreen;
+            }
+            .inp:disabled {
+                background-color: yellowgreen;
+            }
+            .inp:enabled {
+                background-color: red;
+            }
+            .test-span:first-of-type {
+                color: red;
+            }
+            .child-test div:first-child{
+                background-color: green;
+            }
+            .child-test div:last-child{
+                background-color: brown;
+            }
+        </style>
+        <div class="pseudo"></div>
+        <input class="inp" type="text" value="with disable" disabled>
+        <input class="inp" type="text" value="with enable">
+        <div class="child-test">
+            <div>First child</div>
+            <div>Second child</div>
+            <div>Last child</div>
+        </div>
+        <div>
+            <span class="test-span">Span 1</span>
+            <span class="test-span">Span 2</span>
+            <span class="test-span">Span 3</span>
+        </div>
+    </div>
+    <div class="topic" topic-name="input:in-range Pseudo-classes">
+        <style>
+            .mark {
+                background-color: white;
+                width: 150px;
+            }
+            .mark:in-range {
+                background-color: yellowgreen;
+            }
+            .mark:out-of-range {
+                background-color: rgb(205, 50, 50);
+                color: white;
+            }
+            .mark:invalid {
+                border: 3px solid rgb(187, 0, 255);
+                background-color: crimson;
+            }
+        </style>
+        <input class="mark" type="number" min="4" max="10" value="5"/>
+        <input class="mark" type="number" min="4" max="10" value="11"/>
+        <input class="mark" type="email" value="bangladesh"/>
+    </div>
+    <div class="topic" topic-name="input:in-range Pseudo-classes">
+        <style>
+        
+            .teacher:nth-child(2){
+                background-color: red;
+            }
+
+        </style>
+        <div>
+            <div class="teacher">
+                <div class="teacher-name">Md. Asadujjaman Sagor</div>
+                <div class="teacher-phone">+880170000000</div>
+            </div>
+            <div class="teacher">
+                This is second child
+            </div>
+        </div>
+    </div>
+    <div class="topic" topic-name="input:in-range Pseudo-classes">
+        <style>
+            :target {
+                background-color: yellow;
+                border: red;
+            }
+        </style>
+        <a href="#test">Go to test</a>
+        <a href="#test1">Go to test 1</a>
+        <a href="#topic1">Go to Topic 1</a>
+        <div id="test">This is test</div>
+        <div id="test1">This is test</div>
+    </div>
+</body>
+<script src="../previewer/previwer-script.js"></script>
+</html>

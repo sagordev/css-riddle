@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+    <link rel="stylesheet" href="../previewer/previwer-style.css" />
+  </head>
+  <body>
+    <div class="topic" topic-name="Pseudo Element::First-line">
+      <style>
+        #pseudo-element::first-line {
+          color: white;
+          font-size: 20px;
+          word-spacing: 20px;
+          letter-spacing: 4px;
+          text-decoration: dashed;
+          background-color: red;
+          vertical-align: sub;
+          line-height: 30px;
+          text-transform: uppercase;
+          clear: both;
+        }
+      </style>
+
+      <div id="pseudo-element">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
+        aspernatur magnam in quisquam neque eos debitis non cum! Itaque cum
+        perferendis quasi. Magni cumque sint eos corrupti, aperiam beatae ex
+        iusto minus at officia mollitia molestias incidunt sed animi ut
+        perferendis blanditiis laboriosam rem magnam, saepe sapiente quis neque!
+        Maiores, nihil deleniti! Deleniti inventore libero rerum repudiandae
+        totam. Doloribus fuga ab veniam ea maxime corporis, deserunt unde nobis
+        provident nihil vero, dignissimos dolore, fugiat possimus doloremque
+        quisquam vitae perferendis autem. Nemo quam fuga architecto ullam
+        aspernatur ab ut natus id. Nam minus id voluptates quod? Repellat porro
+        placeat, officiis repellendus eaque exercitationem cum asperiores
+        expedita quos officia nisi. At totam cumque nisi omnis fugit asperiores
+        consectetur vel recusandae dolorum quae sunt tempore nobis illum culpa,
+        deleniti reiciendis porro magnam fuga. Eos repellendus, blanditiis illo
+        reiciendis, magnam numquam voluptate dicta aut rem, ab sit delectus
+        reprehenderit voluptates nihil libero atque praesentium nobis dolore et
+        unde exercitationem animi provident iste? Fugit ratione illo
+        necessitatibus dignissimos nam sed assumenda distinctio sint reiciendis?
+        Perferendis officiis praesentium explicabo eaque consectetur. Quo ullam
+        quis eaque atque adipisci sit incidunt ab quod repellendus quam
+        accusantium consequuntur, voluptates molestiae commodi vero assumenda
+        pariatur aut iusto, voluptas eius maiores. Pariatur perspiciatis velit
+        minus facilis non officiis quaerat debitis veniam rerum obcaecati
+        ducimus consectetur est doloremque corrupti illum dicta, recusandae
+        repudiandae? Ipsa blanditiis perferendis laudantium ea temporibus
+        consequatur ducimus id, esse placeat iste nihil quod minus adipisci
+        ipsum eligendi suscipit fugit cum ad perspiciatis voluptatem expedita
+        error? Rem suscipit deserunt commodi nemo facilis harum nihil laborum
+        eum iusto ducimus corporis debitis, voluptates asperiores repudiandae
+        nulla odio. Vitae nostrum nisi voluptates qui dignissimos nesciunt illum
+        quas est. At eius dolor iusto assumenda culpa debitis rerum soluta
+        dolore corporis consectetur cumque vitae doloribus architecto illum illo
+        dicta nam, temporibus, quasi harum quos?
+      </div>
+    </div>
+
+    <div class="topic" topic-name="Pseudo Element::first-letter">
+      <style>
+        .first-letter::first-letter {
+          color: white;
+          font-size: xx-large;
+          background-color: red;
+          /* margin: 12px 16px; */
+          padding: 12px 16px;
+          border: 1px solid green;
+        }
+      </style>
+      <div class="first-letter">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore natus
+        eaque magni porro ullam quasi libero enim, similique officia facere.
+      </div>
+    </div>
+
+    <div class="topic" topic-name="Pseudo Element::before">
+      <style>
+        #pseudo-before-class::before {
+          content: "";
+          width: 100px;
+          height: 2px;
+          color: red;
+        }
+      </style>
+
+      <span>test</span>
+      <span id="pseudo-before-class">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, labore.
+      </span>
+    </div>
+    <script src="../previewer/previwer-script.js"></script>
+  </body>
+</html>

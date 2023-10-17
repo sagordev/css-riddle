@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation and Dropdown</title>
+    <link rel="stylesheet" href="../previewer/previwer-style.css" />
+  </head>
+  <body>
+    <div class="topic" topic-name="Navbar Sidebar">
+      <style>
+        ul.navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background-color: #dfdfdf;
+            width: 200px;
+            border: 1px solid rgb(46, 37, 55);
+            /* position: fixed; */
+            /* height: 100%; */
+        }
+        ul.navbar li {
+            text-align: center;
+            border-bottom: 1px solid rgb(46, 37, 55);
+        }
+        ul.navbar li:last-child{
+            border-bottom: none;
+        }
+        ul.navbar li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px 8px;
+        }
+        
+        ul.navbar li a.active{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        ul.navbar li a:hover:not(.active) {
+            background-color: rgb(46, 37, 55);
+            color: white;
+        }
+      </style>
+        <div>
+            <ul class="navbar">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+            <div style="margin-left: 210px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+            </div>
+        </div>
+    </div>
+    <div class="topic" topic-name="Navbar Horizontal">
+        <style>
+          ul.navbar-hr {
+                display: flex;
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              background-color: #dfdfdf;
+              width: 100%;
+              position: sticky;
+              top: 0;
+              /* height: 100%; */
+              list-style-position: inside;
+          }
+          ul.navbar-hr li {
+            display: inline-block;
+            text-align: center;
+          }
+          ul.navbar-hr li a {
+            display: inline-block;
+              text-decoration: none;
+              color: black;
+              padding: 5px 8px;
+          }
+          
+          ul.navbar-hr li a.active{
+              background-color: blueviolet;
+              color: white;
+          }
+  
+          ul.navbar-hr li a:hover:not(.active) {
+              background-color: rgb(46, 37, 55);
+              color: white;
+          }
+
+          .dropdownbtn {
+            position: relative;
+          }
+
+          .dropdownbtn:hover ul.dropdown {
+            display: block;
+          }
+
+          ul.dropdown {
+            display: none;
+            position: absolute;
+            background-color: #dfddfd;
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+            border: 1px solid gray;
+          }
+          ul.dropdown li {
+            text-align: left;
+            display: block;
+          }
+          ul.dropdown li a{
+            display: block;
+            text-wrap: nowrap;
+          }
+
+          @media screen and (max-width: 600px) {
+            ul.navbar-hr {
+                display: block;
+            }
+            ul.navbar-hr li {
+                display: block;
+            }
+          }
+        </style>
+          <div>
+            <div>
+                <h1>Welcome.com</h1>
+            </div>
+              <ul class="navbar-hr">
+                  <li><a class="active" href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li class="dropdownbtn">
+                    <a href="#">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Daily Event</a></li>
+                        <li><a href="#">Upcoming Event</a></li>
+                        <li><a href="#">New Event</a></li>
+                    </ul>
+                </li>
+                  <li class="dropdownbtn">
+                        <a href="#">Events</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Daily Event</a></li>
+                            <li><a href="#">Upcoming Event</a></li>
+                            <li><a href="#">New Event</a></li>
+                        </ul>
+                    </li>
+              </ul>
+              <div>
+                  Lorem ipsu                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+                  m dolor sit amet consectetur adipisicing elit. Doloremque, expedita ipsum neque dolore mollitia molestias rerum vel vero iusto nostrum aliquam adipisci atque esse fugit, ea accusamus facilis voluptatibus dignissimos rem. Fugiat ut rerum ullam reprehenderit, quasi modi. Doloribus officia vero mollitia, obcaecati quos corporis dolorum excepturi aliquam dolores tenetur. Iste non adipisci atque illo id perspiciatis dolores modi delectus, quo provident accusantium nisi, nemo molestias repellendus quia quos voluptas aliquid! Provident, amet sunt cum voluptatibus quibusdam itaque molestias consequatur expedita, architecto earum ad explicabo et. Molestiae quas aliquid ipsam repellendus. Repellat harum accusamus tenetur quod ullam nobis quos voluptates!
+              </div>
+          </div>
+      </div>
+      <div class="topic" topic-name="Dropdown">
+        <style>
+            .dropdown-text {
+                position: relative;
+            }
+            .dropdown-text:hover .dropdown-content {
+                display: block;
+            }
+            .dropdown-content {
+                display: none;
+                background-color: black;
+                color: white;
+                padding: 10px;
+                min-width: 100px;
+                position: absolute;
+            }
+            .dropdown-btn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                display: inline-block;
+            }
+        </style>
+        <div style="display: flex; justify-content: space-between;">
+            <div class="dropdown-text">
+                <div class="dropdown-btn">Hover</div>
+                <div class="dropdown-content">
+                    <p>Some text here</p>
+                    <p>Some text here</p>
+                    <p>Some text here</p>
+                </div>
+            </div>
+            <div class="dropdown-text">
+                <div class="dropdown-btn">Hover</div>
+                <div class="dropdown-content" style="right: 0;">
+                    <p>Some text here</p>
+                    <p>Some text here</p>
+                    <p>Some text here</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    <script src="../previewer/previwer-script.js"></script>
+  </body>
+</html>

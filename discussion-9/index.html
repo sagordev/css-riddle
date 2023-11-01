@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation and Dropdown</title>
+    <link rel="stylesheet" href="../previewer/previwer-style.css" />
+  </head>
+  <body>
+    <div class="topic" topic-name="attribute selector">
+      <style>
+        a[target] {
+          background-color: #e20a0a;
+        }
+        a[target="_PARENT"] {
+          background-color: #09db13;
+        }
+        a[class="abc"] {
+          background-color: #bcdb09;
+        }
+        a[sazzad] {
+          background-color: aqua;
+        }
+        div[bangla|="Bangla"] {
+          color: #e20a0a;
+        }
+        div[bangla^="aB"] {
+          color: #e20a0a;
+        }
+      </style>
+      <a href="#" target="_blank">click</a>
+      <a href="#">Button</a>
+      <a href="#">Button</a>
+      <a href="#">Button</a>
+      <a href="#">Button</a>
+
+      <a href="#" target="_Parent">click</a>
+      <a href="#" target="_blank" class="abc">click</a>
+      <a href="#" sazzad="_blank">click</a>
+
+      <div bangla="amar sonar bangla">amar sonar bangla</div>
+      <div bangla="aBangla-desh-i-love kkk">i love Bangla-desh</div>
+      <div bangla="ab">i love Bangla-desh</div>
+      <div></div>
+    </div>
+
+    <script src="../previewer/previwer-script.js"></script>
+  </body>
+</html>
